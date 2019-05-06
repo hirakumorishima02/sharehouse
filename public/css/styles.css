@@ -1,0 +1,109 @@
+
+
+header h1 {
+    margin-bottom: 0;
+}
+
+body {
+    font-family: 'Crimson Text', 'Sawarabi Mincho',sans-serif;
+}
+
+.cover {
+  background: url(/img/cover/cover.png);
+  background-size: cover;
+  background-position: 10% 50%;
+}
+
+header h1 {
+    text-align: center;
+}
+.main h3{
+    text-align: center;
+}
+
+.state {
+    padding: 0;
+}
+
+.state img {
+    position:relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.state img:hover {
+    opacity: 0.8;
+}
+
+.state p{
+  color: white;
+  position: absolute;
+  font-size: 2em;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  /*文字の装飾は省略*/
+  z-index: 2;
+  }
+
+.main {
+    text-align: center;
+}
+
+.mapview {
+    margin: 30px 0 30px 0;
+}
+
+form > textarea {
+    height: 200px;
+}
+
+.error p {
+    margin-bottom: 0;
+    color: red;
+}
+
+#textlength {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.textOverflowTest {
+    overflow: hidden;
+    /*white-space: nowrap;*/
+    text-overflow: ellipsis;
+    height: 50px;
+    width: 150px;
+}
+
+@media (min-width: 1380px) {
+    .map{
+        border-right: 1px dotted gray;
+    }
+}
+
+@media (max-width: 991px) {
+    .sharehouse-form {
+        margin-top: 30px;
+    }
+}
+
+
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {
+height: 50%;
+width: 50%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
