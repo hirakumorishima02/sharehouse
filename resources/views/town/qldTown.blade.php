@@ -5,7 +5,7 @@
     <!--マップ表示-->
     <div class="col-lg-8 col-sm-12 map" >
     <h3>気になるシェアハウスをチェックする</h3>
-    <div id="map" style="width:900px; height:500px;"></div>
+    <div id="map" style="width:100%; height:90%;"></div>
     </div>
     
     <!-- Map入力フォーム -->
@@ -45,7 +45,6 @@
     <br>
     <textarea type="text" name="description" class="form-control" onKeyUp="countLength(value, 'textlength');">{{ old('description') }}</textarea> 
     <p id="textlength">0</p>
-    <br>
     <div class="error">
     @if ($errors->has('photo'))
         @foreach($errors->get('photo') as $error)
@@ -53,6 +52,7 @@
         @endforeach
     @endif
     </div> 
+    シェアハウスの画像
     <br>
     <input type="file" name="photo">
     <br>
@@ -121,7 +121,7 @@
 
     var params = (new URL(document.location)).searchParams;
     var id = parseInt(params.get("id"));
-    console.log(id); //consoleで2が表示される
+    
 
 
     function initMap() {
@@ -157,6 +157,8 @@
             position: markerLatLng,
             map: map
             });
+
+        
         // 吹き出しの追加
         infoWindow[i] = new google.maps.InfoWindow({
             content: '<div class="map">' +
@@ -165,9 +167,13 @@
              '<img src="/storage/photo_images/'+list[i]['name'] +
              '.jpg" width="100px" height="100px">'+
              '<br>' +
-             list[i]['description'] +
+             '<p class="textOverflowTest">'+
+             nl2br(list[i]['description']) +
+             '</p>'+
              '<br>' +
-             '<a href="/house/{{$val->id}}">'+
+             '<a href="/house/'+
+             list[i]['id']+
+             '">'+
              list[i]['name']+
              'の詳細を見る</a>'+
              '</div>'
@@ -219,6 +225,12 @@
         }
     }
     
+    // 改行して表示するファンクションの設定
+    function nl2br(str) {
+        var res = str.replace(/\r\n/g, "<br>");
+        res = res.replace(/(\n|\r)/g, "<br>");
+        return res;
+    }
     </script>
     
     <script async defer

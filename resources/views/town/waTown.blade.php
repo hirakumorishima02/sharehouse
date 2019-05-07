@@ -5,7 +5,7 @@
     <!--マップ表示-->
     <div class="col-lg-8 col-sm-12 map" >
     <h3>気になるシェアハウスをチェックする</h3>
-    <div id="map" style="width:900px; height:500px;"></div>
+    <div id="map" style="width:100%; height:90%;"></div>
     </div>
     
     <!-- Map入力フォーム -->
