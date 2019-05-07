@@ -95,6 +95,7 @@ form > textarea {
 @media (min-width: 1380px) {
     .map{
         border-right: 1px dotted gray;
+        height: 700px;
     }
     .house-detail{
         border-right: 1px dotted gray;
@@ -102,6 +103,10 @@ form > textarea {
 }
 
 @media (max-width: 991px) {
+    .map{
+        height: 400px;
+        margin-bottom: 20px;
+    }
     .sharehouse-form {
         margin-top: 30px;
     }
