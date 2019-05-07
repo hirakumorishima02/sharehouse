@@ -82,8 +82,21 @@ form > textarea {
     width: 150px;
 }
 
+.status {
+    margin-top: 20px;
+}
+
+.housePhoto {
+    width: 80%;
+    height: 80%;
+}
+
+
 @media (min-width: 1380px) {
     .map{
+        border-right: 1px dotted gray;
+    }
+    .house-detail{
         border-right: 1px dotted gray;
     }
 }

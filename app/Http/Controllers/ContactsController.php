@@ -30,7 +30,7 @@ class ContactsController extends Controller
         return view('complete');
         
         // 送信メール
-        \Mail::send(new \App\Mail\Contact([
+        \Mail::send(new Contact([
             'to' => $request->email,
             'to_name' => $request->name,
             'from' => 'ujinchu@gmail.com',
@@ -40,7 +40,7 @@ class ContactsController extends Controller
         ]));
  
         // 受信メール
-        \Mail::send(new \App\Mail\Contact([
+        \Mail::send(new Contact([
             'to' => 'ujinchu@gmail.com',
             'to_name' => 'MySite',
             'from' => $request->email,

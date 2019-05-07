@@ -21,15 +21,15 @@
           <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="d-md-none">
+          <div>
           <div id="menu" class="collapse navbar-collapse">
             <ul class="navbar-nav">
-              <li class="nav-item mr-3"><a href="#nsw" class="nav-link">ニューサウスウェールズ州</a></li>
-              <li class="nav-item mr-3"><a href="#vic" class="nav-link">ビクトリア州</a></li>
-              <li class="nav-item"><a href="#qld" class="nav-link">クイーンズランド州</a></li>
-              <li class="nav-item"><a href="#sa" class="nav-link">南オーストラリア州</a></li>
-              <li class="nav-item"><a href="#wa" class="nav-link">西オーストラリア州</a></li>
-              <li class="nav-item"><a href="#tas" class="nav-link">タスマニア州</a></li>
+              <li class="nav-item mr-3"><a href="/state/nsw" class="nav-link">NSW</a></li>
+              <li class="nav-item mr-3"><a href="/state/vic" class="nav-link">VIC</a></li>
+              <li class="nav-item"><a href="/state/qld" class="nav-link">QLD</a></li>
+              <li class="nav-item"><a href="/state/sa" class="nav-link"> SA </a></li>
+              <li class="nav-item"><a href="/state/wa" class="nav-link"> WA </a></li>
+              <li class="nav-item"><a href="/state/tas" class="nav-link">TAS</a></li>
             </ul>
           </div>
           </div>
