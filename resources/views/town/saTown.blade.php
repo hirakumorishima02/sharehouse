@@ -155,7 +155,8 @@
             // マーカーの追加
             marker[i] = new google.maps.Marker({
             position: markerLatLng,
-            map: map
+            map: map,
+            icon: "/img/icon/circle64.png",
             });
 
         
