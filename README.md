@@ -1,4 +1,3 @@
-share
 shareHouseAustralia
 ====
 オーストラリアで盛んなシェアハウス。その位置を視覚的に捉えやすくしたのがshareHouseAustraliaです。
