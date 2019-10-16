@@ -15,4 +15,4 @@ https://www.gumtree.com.au
 ただgumtreeとshareHouseAustraliaが異なるのは、その利便性です。
 
 gumtreeでシェアハウスを探す場合、地名を見ることでしかシェアハウスの位置を知り得る手段はありません。
-一方で、shareHouseAustraliaはGoogleMapの位置情報によって大まかな場所を知ることができるため、土地勘がない人であっても駅からの距離や利便性を目で見て確かめることができます。
+一方で、shareHouseAustraliaはGoogleMapの位置情報によって大まかな場所を知ることができるため、土地勘がない人であっても駅からの距離や利便性を目で見て確かめることができます
